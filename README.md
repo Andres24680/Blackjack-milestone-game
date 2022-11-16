@@ -1,9 +1,5 @@
 # NYU-SD-04 Milestone Project: Blackjack Game
 
-_Before you start programming your project_... plan it!
-
-Complete the planning sections below and include them in the README.md of your project repository. Once you're done, reach out to your instructional staff -- they'll examine your plan, help you scope it appropriately for the tools available to you and think ahead toward technical solutions, and point out any areas that could use any more thought. _Use the template below!_
-
 --------
 
 ## Project Description
@@ -18,28 +14,28 @@ Have a win/loss counter on the screen
 
 Adding buttons to allow user to HIT or STAND 
 
-Adding a restart to get a new hand while still keeping track of score 
+Adding a restart button to get a new hand while still keeping track of previous wins/loss
+
+implement a auto win feature if your handed 21 
+
+
 ```
 
 ## Deliverables
 
->Even if you have a great big idea for a game, it's important to scope this project according to what you can get done in the next two weeks. We'll refer to your project completion goal using the term **[Minimum Viable Product](https://en.wikipedia.org/wiki/Minimum_viable_product) (MVP)** -- a list of the criteria needed to "ship" a playable version of your game that meets the project requirements.
->
->*Don't lose sight of your big ideas, though! Keep a list of further improvements you can refer to as **Post-MVP Ideas**. You might finish some before our project time is done, or you might work on them later!*
->
-> For your README, delete this blockquote and fill in the lists below.
 
 ### MVP Criteria
 
-- One thing my game must do to meet my minimum standard.
-- Another thing.
-- Etc.
+- Adding a score card
+- Show "You won" or "You lose" on game end 
+- Adding a restart button to deal a new hand but not resetting the win/loss score 
+- Adding 
 
 ### Post-MVP Plans
 
-- One great idea I hope to be able to add in before the project deadline.
-- Another that will be a stretch.
-- Something else I don't technically know how to do... *yet*. :)
+- Maybe add a "Draw" collum 
+- Give user ability to have currency to bet 
+- add more ai users 
 
 ## Project Planning
 
