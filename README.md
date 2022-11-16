@@ -1,12 +1,10 @@
 # NYU-SD-04 Milestone Project: Blackjack Game
 
---------
 
 ## Project Description
 
-_My idea for this project is to create a single-player blackjack game! I want to create the background like you are playeing on a blackjack table and have you play against the dealer. The way to beat the dealer is by getting as close to 21 as possible without going over, and having a stronger hand then the dealer.
-Goodluck!!  _
-
+My idea for this project is to create a single-player blackjack game! I want to create the background like you are playeing on a blackjack table and have you play against the dealer. The way to beat the dealer is by getting as close to 21 as possible without going over, and having a stronger hand then the dealer.
+Goodluck!!  
 ## Game Logic
 
 ```
