@@ -1,4 +1,4 @@
-# NYU-SD-04 Milestone Project: Planning
+# NYU-SD-04 Milestone Project: Blackjack Game
 
 _Before you start programming your project_... plan it!
 
@@ -8,17 +8,17 @@ Complete the planning sections below and include them in the README.md of your p
 
 ## Project Description
 
-_(Replace this text with a brief description of your game and what inspired you to make it.)_
+_My idea for this project is to create a single-player blackjack game! I want to create the background like you are playeing on a blackjack table and have you play against the dealer. The way to beat the dealer is by getting as close to 21 as possible without going over, and having a stronger hand then the dealer.
+Goodluck!!  _
 
 ## Game Logic
 
 ```
-Replace this text with pseudocode.
-The pseudocode should describe in plain, simple language the logic of the game.
-Describe the logic involved in player decisions. 
-  - What are the choices available to the player? 
-  - What happens when the player makes a choice?
-Describe the logic that evaluates the player's victory/loss/progress status.
+Have a win/loss counter on the screen 
+
+Adding buttons to allow user to HIT or STAND 
+
+Adding a restart to get a new hand while still keeping track of score 
 ```
 
 ## Deliverables
