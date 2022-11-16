@@ -8,6 +8,8 @@ Goodluck!!
 ## Game Logic
 
 ```
+When you press HIT, you get issued a card. You can do this as much as you like as long you don't go BUST i.e go over 21.
+
 Have a win/loss counter on the screen 
 
 Adding buttons to allow user to HIT or STAND 
@@ -15,6 +17,8 @@ Adding buttons to allow user to HIT or STAND
 Adding a restart button to get a new hand while still keeping track of previous wins/loss
 
 implement a auto win feature if your handed 21 
+
+Add a hard reset that will make you start from scratch 
 
 
 ```
