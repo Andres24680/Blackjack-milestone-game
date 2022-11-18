@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack game</title>
+    <!-- CSS only -->
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="style.css"/> 
-</head>
 <body>
  <!--- Making the top of the page header and score box-->
-  <div class="container">
+  <div class="cool-container">
    <h2>
     <!--adding span style to color the title different tones-->
     <span style="color:black">Black</span>
@@ -32,16 +36,29 @@
  </tr>
 
 </table>
+</div>
  <!--adding another div for users score-->
-  </div>
+ <!--use span ids to be able to get them later using js w3s-->
+  
  <div clas="flex-blackjack-row-2">
  <div id="my-score-box">
    <h2> YOU: <span id="your-blackjack-results">0</span></h2>
-
-
  </div>
-
-
+ <!--adding same as above but for dealer score-->
+ <div id="dealer-score">
+    <h2>DEALER: <span id="dealer-blackjack-results">0</span></h2>
+     </div>
+ </div>
+<!--adding the users interactive buttons to hit or pass-->
+ <div class="flex-blackjack-row-3">
+ <div>
+    <!--using bootstrap layout for buttons and making id for them-->
+ <button type="button"  class="btn btn-primary " id="blackjack-hit-button">Hit</button>
+ <button type="button" class="btn btn-warning bddtn-lg" id="blackjack-stand-button">Stand</button>
+ <button type="button" class="btn btn-danger btddn-lg" id="blackjack-deal-button">Deal</button>
+ <button type="button" class="btn btn-success btddn-lg" id="blackjack-restart-button">Restart</button>
+ </div>
+ </div>
 
 
 
