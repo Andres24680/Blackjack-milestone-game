@@ -4,6 +4,7 @@
 ## Project Description
 
 My idea for this project is to create a single-player blackjack game! I want to create the background like you are playeing on a blackjack table and have you play against the dealer. The way to beat the dealer is by getting as close to 21 as possible without going over, and having a stronger hand then the dealer.
+You have 10 chances to beat the dealer
 Goodluck!!  
 ## Game Logic
 
@@ -31,7 +32,7 @@ Add a hard reset that will make you start from scratch
 - Adding a score card
 - Show "You won" or "You lose" on game end 
 - Adding a restart button to deal a new hand but not resetting the win/loss score 
-- Adding 
+- Make sure the score collum properly represents the score
 
 ### Post-MVP Plans
 
@@ -44,7 +45,7 @@ Add a hard reset that will make you start from scratch
 | Date | Goals |
 | ---- | ----- |
 | Tue. 11/15 | Create GitHub repository. Complete README.md. |
-| Thu. 11/17 |      |
+| Thu. 11/17 | Start building my html and build player score card.     |
 | Sun. 11/20 |      |
 | Tue. 11/22 |      |
 | Tue. 11/29 | Deploy to GitHub Pages. |
