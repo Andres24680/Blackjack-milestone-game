@@ -1,5 +1,5 @@
 body{
-    background-image: url(./src/background.png);
+    background-image: url(./src/newer\ background.jpeg);
     background-repeat: no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -11,7 +11,7 @@ night need to adjust title due to background issues*/
 .cool-container{
     margin: 0 auto;
     text-align: center;
-    color: azure;
+    color: white;
 }
 /*adding styles for flex box rows 123*/
 
