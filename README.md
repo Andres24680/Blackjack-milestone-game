@@ -46,7 +46,7 @@ Add a hard reset that will make you start from scratch
 | ---- | ----- |
 | Tue. 11/15 | Create GitHub repository. Complete README.md. |
 | Thu. 11/17 | Start building my html and build player score card.     |
-| Sun. 11/20 |      |
+| Sun. 11/20 | Finished the html portion. Working on CSS.    |
 | Tue. 11/22 |      |
 | Tue. 11/29 | Deploy to GitHub Pages. |
 | Thu. 12/01 | Submit completed project. Project presentations. |
