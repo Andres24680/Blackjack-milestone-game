@@ -46,7 +46,7 @@ table, th, td{
     text-align: center;
 }
 
-/*adding padding to buttons for spacing
+/*adding padding to buttons for spacing*/
 .flex-blackjack-row-3 div{
     padding: 10px;
 }
@@ -54,7 +54,7 @@ table, th, td{
     padding: 10px;
     margin-bottom: 10px;
 }
-/*adding color for score boxes due to harsh background
+/*adding color for score boxes due to harsh background*/
 #win-header{
     color: lightgreen;
 }
