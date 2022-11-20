@@ -13,5 +13,13 @@ night need to adjust title due to background issues*/
     text-align: center;
     color: white;
 }
-/*adding styles for flex boxes*/
-.
+/*adding styles for flex box rows 123*/
+
+.flex-blackjack-row-1,.flex-blackjack-row-2, .flex-blackjack-row-3{
+ display: flex;
+ padding: 5px;
+ flex-wrap: wrap;
+ flex-direction: row;
+ justify-content: space-evenly;
+
+}
