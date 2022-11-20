@@ -1,6 +1,17 @@
-.blackjack-background {
-    position-size: covered;
-    
+body{
+    background-image: url(./src/background.png);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
-    z-index: 1;
-  }
+}
+/*Headings for container
+night need to adjust title due to background issues*/
+.cool-container{
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+/*adding styles for flex boxes*/
+.
