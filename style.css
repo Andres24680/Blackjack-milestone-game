@@ -11,15 +11,56 @@ night need to adjust title due to background issues*/
 .cool-container{
     margin: 0 auto;
     text-align: center;
-    color: white;
+    color: azure;
 }
 /*adding styles for flex box rows 123*/
 
-.flex-blackjack-row-1,.flex-blackjack-row-2, .flex-blackjack-row-3{
- display: flex;
- padding: 5px;
- flex-wrap: wrap;
- flex-direction: row;
- justify-content: space-evenly;
+.flex-blackjack-row-1,
+.flex-blackjack-row-2, 
+.flex-blackjack-row-3{
+ /*adds everything in a row*/
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+flex-wrap: wrap;
+/*adds spacing between data*/
+padding: 5px;
+}
+/*add height to give space for cards, flex:1 a;;ows box to occuopy as much space possible w3s*/
+.flex-blackjack-row-2 div{
+    padding: 10px;
+    flex: 1;
+    height: 350px;
+    text-align: center;
+}
 
+.flex-blackjack-row-2 div img{
+    padding: 10px;
+    object-fit: contain;
+}
+/*adding styles for score box table*/
+table, th, td{
+    padding:  5px;
+    border: 2px solid white;
+    align-items: center;
+    text-align: center;
+}
+
+/*adding padding to buttons for spacing
+.flex-blackjack-row-3 div{
+    padding: 10px;
+}
+.flex-blackjack-row-3 button{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+/*adding color for score boxes due to harsh background
+#win-header{
+    color: lightgreen;
+}
+#loss-header{
+    color: darkred;
+}
+#draw-header{
+    color: yellow;
 }
