@@ -42,4 +42,20 @@ const YOU = blackjackGame['you'];
 const DEALER = blackjackGame['dealer'];
 
 //sound variables 
-const hitSound
+const hitSound = new Audio("sounds/swish.m4a");
+const winSound = new Audio("sounds/cash.mp3");
+const loseSound = new Audio("sounds/aww.mp3");
+
+//recommended to add a window width to help screen adjust w3s
+let windowWidth = window.screen.width;
+let windowHeight = window.screen.height;
+let winner;
+
+//adding event listiner for HIT function 
+document.querySelector("#blackjack-hit-button").addEventListener("click", blackjackHit);
+
+//creating a function for blackjack hit
+function blackjackHit(){
+    //going to check if user hits stand by using a if else statments
+    if(blackjackGame['isStand'] === false)
+}
