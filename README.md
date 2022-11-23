@@ -39,6 +39,7 @@ Add a hard reset that will make you start from scratch
 - Maybe add a "Draw" collum 
 - Give user ability to have currency to bet 
 - add more ai users 
+-add sound for a win or loss 
 
 ## Project Planning
 
@@ -47,6 +48,6 @@ Add a hard reset that will make you start from scratch
 | Tue. 11/15 | Create GitHub repository. Complete README.md. |
 | Thu. 11/17 | Start building my html and build player score card.     |
 | Sun. 11/20 | Finished the html portion. Working on CSS.    |
-| Tue. 11/22 |      |
+| Tue. 11/22 | Started to work in my js file. Going to build card deck and load card images     |
 | Tue. 11/29 | Deploy to GitHub Pages. |
 | Thu. 12/01 | Submit completed project. Project presentations. |
