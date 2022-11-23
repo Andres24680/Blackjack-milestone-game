@@ -20,7 +20,7 @@ let blackjackGame = {
  },
 
  //creating a array for the cards 
-  'cards': ["2", "3", "4", "5", "6", "7", "8", "9", "10", "K", "J", "Q", "A"], 
+  cards: ["2", "3", "4", "5", "6", "7", "8", "9", "10", "K", "J", "Q", "A"], 
 
   //creating the value corisponding to the value for cards
   //Ace has a value of 11 or 1
@@ -75,4 +75,8 @@ function randomCard(){
 
 function showCard(card, activePlayer){
     //creating if statments for if user score is less then 21 
+    if(activePlayer['score'] <= 21){
+        let cardImage = document.createElement("img");
+
+    }
 }
