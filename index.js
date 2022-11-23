@@ -61,7 +61,7 @@ function blackjackHit(){
     { 
         //trigger function and store value 
         let card = randomCard();
-        showCard(card, blackjackGame.you);
+        showCard(card,  YOU);
         //function showcard with the YOU parameters 
     }
 }
