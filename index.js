@@ -80,7 +80,31 @@ function showCard(card, activePlayer){
         cardImage.src = `images/${card}.png`;
         cardImage.style = `width:${widthSize()}; height:${heightSize()};`;
         document.querySelector(activePlayer["div"]).appendChild(cardImage);
-        hitSound.play();
+        hitSound.play(); 
+    }
+}
+
+function widthSize(){
+
+    if(windowWidth > 1000){
+        let newWidthSize = window.screen.width * 0.1;
+        return newWidthSize;
+    }
+    else{
+        return window.screen.width * 0.18;
+    }
+}
+
+function heightSize(){
+
+    if(windowHeight > 700){
+        let newHeightSize = window.screen.height * 0.18;
+        return newHeightSize;
+    }
+    else{
+        return window.screen.height * 0.15;
+
+
     }
 }
 
