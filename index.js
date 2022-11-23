@@ -1,22 +1,21 @@
 
 // "you" gives acces to the score, the box will be for card img and box size 
 let blackjackGame = {
-    you :
-    {
-        "scoreSpan" : "#your-blackjack-results",
-        "div" : "#your-box",
-        "boxSize" : ".flex-blackjack-row-2 div",
-        "score" : 0
+    you :{
+        scoreSpan : "#your-blackjack-results",
+        div : "#your-box",
+        boxSize : ".flex-blackjack-row-2 div",
+        score : 0,
     },
 
 
 //same as above for dealer 
  dealer:
  {
-    "scoreSpan" : "#dealer-blackjack-results" ,
-    "div" : "#dealer-box" ,
-    "boxSize" :  ".flex-blackjack-row-2 div", 
-    "score" : 0
+    scoreSpan : "#dealer-blackjack-results" ,
+    div : "#dealer-box" ,
+    boxSize :  ".flex-blackjack-row-2 div", 
+    score: 0,
  },
 
  //creating a array for the cards 
@@ -34,12 +33,12 @@ let blackjackGame = {
   //test for when dealer passes cards
   isTurnsOver : false,
   //prevents to press deal when Dealer is playing 
-  pressOnce: false
+  pressOnce: false,
 };
 
 //creating variable to access info above 
-const YOU = blackjackGame['you'];
-const DEALER = blackjackGame['dealer'];
+const YOU = blackjackGame["you"];
+const DEALER = blackjackGame["dealer"];
 
 //sound variables 
 const hitSound = new Audio("sounds/swish.m4a");
@@ -52,16 +51,17 @@ let windowHeight = window.screen.height;
 let winner;
 
 //adding event listiner for HIT function 
-document.querySelector("#blackjack-hit-button").addEventListener("click", blackjackHit);
+document.querySelector("#blackjack-hit-button")
+.addEventListener("click", blackjackHit);
 
 //creating a function for blackjack hit
 function blackjackHit(){
     //going to check if user hits stand by using a if else statments
-    if(blackjackGame['isStand'] === false)
+    if(blackjackGame["isStand"] === false)
     { 
         //trigger function and store value 
-        let card= randomCard();
-        showCard(card, YOU);
+        let card = randomCard();
+        showCard(card, blackjackGame.you);
         //function showcard with the YOU parameters 
     }
 }
@@ -75,8 +75,33 @@ function randomCard(){
 
 function showCard(card, activePlayer){
     //creating if statments for if user score is less then 21 
-    if(activePlayer['score'] <= 21){
+    if(activePlayer["score"] <= 21) {
         let cardImage = document.createElement("img");
+        cardImage.src = `images/${card}.png`;
+        cardImage.style = `width:${widthSize()}; height:${heightSize()};`;
+        document.querySelector(activePlayer["div"]).appendChild(cardImage);
+        hitSound.play();
+    }
+}
 
+function widthSize(){
+
+    if(windowWidth > 1000){
+        let newWidthSize = window.screen.width * 0.1;
+        return newWidthSize;
+    }
+    else{
+        return window.screen.width * 0.18;
+    }
+}
+
+function heightSize(){
+
+    if(windowHeight > 700){
+        let newHeightSize = window.screen.height * 0.18;
+        return newHeightSize;
+    }
+    else{
+        return window.screen.height * 0.15;
     }
 }
