@@ -38,5 +38,8 @@ let blackjackGame = {
 };
 
 //creating variable to access info above 
-const YOU = blackjackGame['you']
-const DEALER = blackjackGame['dealer']
+const YOU = blackjackGame['you'];
+const DEALER = blackjackGame['dealer'];
+
+//sound variables 
+const hitSound
