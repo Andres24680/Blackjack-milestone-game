@@ -58,4 +58,21 @@ document.querySelector("#blackjack-hit-button").addEventListener("click", blackj
 function blackjackHit(){
     //going to check if user hits stand by using a if else statments
     if(blackjackGame['isStand'] === false)
+    { 
+        //trigger function and store value 
+        let card= randomCard();
+        showCard(card, YOU);
+        //function showcard with the YOU parameters 
+    }
+}
+//defining the random card function 
+function randomCard(){
+    //using math.floor and random to get diff valure cards. multiplr by 13 to get a value 0 to 12
+    let randomIndex = Math.floor(Math.random() * 13);
+    return blackjackGame["cards"][randomIndex];
+    //line above the "cards" is given value depending on the function randomCard and is stored in variable 
+}
+
+function showCard(card, activePlayer){
+    //creating if statments for if user score is less then 21 
 }
