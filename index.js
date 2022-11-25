@@ -1,7 +1,7 @@
 
 // "you" gives acces to the score, the box will be for card img and box size 
 let blackjackGame = {
-    you :{
+    you: {
         scoreSpan : "#your-blackjack-results",
         div : "#your-box",
         boxSize : ".flex-blackjack-row-2 div",
@@ -61,7 +61,7 @@ function blackjackHit(){
     { 
         //trigger function and store value 
         let card = randomCard();
-        showCard(card,  YOU);
+        showCard(card,YOU);
         //function showcard with the YOU parameters 
     }
 }
@@ -108,24 +108,18 @@ function heightSize(){
     }
 }
 
-function widthSize(){
-
-    if(windowWidth > 1000){
-        let newWidthSize = window.screen.width * 0.1;
-        return newWidthSize;
+//adding a function to track player score 
+//also adding logit for the ace card if its either a 11 or a 1 
+function updateScore(card, activePlayer) {
+    if (card === "A") {
+      if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 21) {
+        activePlayer["score"] += blackjackGame["cardsMap"][card][1];
+      } else {
+        activePlayer["score"] += blackjackGame["cardsMap"][card][0];
+      }
+    } else {
+      activePlayer["score"] += blackjackGame["cardsMap"][card];
     }
-    else{
-        return window.screen.width * 0.18;
-    }
-}
-
-function heightSize(){
-
-    if(windowHeight > 700){
-        let newHeightSize = window.screen.height * 0.18;
-        return newHeightSize;
-    }
-    else{
-        return window.screen.height * 0.15;
-    }
-}
+  
+    console.log(activePlayer["score"]);
+  }
