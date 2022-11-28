@@ -1,3 +1,4 @@
+/*loading my background found this structure on mdm to help the background adjust to different screen size*/
 body{
     background-image: url(./src/newer\ background.jpeg);
     background-repeat: no-repeat;
@@ -7,60 +8,71 @@ body{
     background-size: cover;
 }
 /*Headings for container
-night need to adjust title due to background issues*/
+night need to adjust title due to background issues
+remeber class is cool-container due to bootstrap issue*/
 .cool-container{
     margin: 0 auto;
     text-align: center;
     color: white;
-}
-/*adding styles for flex box rows 123*/
+  }
+  /*flex puts everything in a row 
+  wrap for text to fix in container*/
 
-.flex-blackjack-row-1,
-.flex-blackjack-row-2, 
-.flex-blackjack-row-3{
- /*adds everything in a row*/
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-flex-wrap: wrap;
-/*adds spacing between data*/
-padding: 5px;
-}
-/*add height to give space for cards, flex:1 a;;ows box to occuopy as much space possible w3s*/
-.flex-blackjack-row-2 div{
+  .flex-blackjack-row-1,
+  .flex-blackjack-row-2,
+  .flex-blackjack-row-3 {
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  /*adding padding for the bottom buttons for hit features*/
+
+  .flex-blackjack-row-2 div {
     padding: 10px;
     flex: 1;
     height: 350px;
     text-align: center;
-}
-
-.flex-blackjack-row-2 div img{
+  }
+  
+  /*adding contain for card images issue where they load big*/
+  .flex-blackjack-row-2 div img {
     padding: 10px;
     object-fit: contain;
-}
-/*adding styles for score box table*/
-table, th, td{
-    padding:  5px;
-    border: 2px solid white;
+  }
+  
+  /*adding padding for the score colum and a white border to contrast background*/
+  table,
+  th,
+  td {
+    padding: 5px;
+    border: 1px solid white;
+    color: white;
     align-items: center;
     text-align: center;
-}
-
-/*adding padding to buttons for spacing*/
-.flex-blackjack-row-3 div {
+  }
+  /*adding extra space between buttons*/
+  .flex-blackjack-row-3 div {
     padding: 10px;
-}
-.flex-blackjack-row-3 button {
+  }
+  
+  .flex-blackjack-row-3 button {
     padding: 10px;
     margin-bottom: 10px;
-}
-/*adding color for score boxes due to harsh background*/
-#win-header{
+  }
+  
+  /*add some color to the colum headers with the ids
+  easier to ready instead of white*/
+  #win-header {
     color: lightgreen;
-}
-#loss-header{
-    color: darkred;
-}
-#draw-header{
+  }
+  
+  #loss-header {
+    color: red;
+  }
+  
+  #draw-header {
     color: yellow;
-}
+  }
+  
