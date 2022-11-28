@@ -61,8 +61,10 @@ function blackjackHit(){
     { 
         //trigger function and store value 
         let card = randomCard();
+        console.log(card);
         showCard(card,YOU);
         //function showcard with the YOU parameters 
+        updateScore(card,YOU);
     }
 }
 //defining the random card function 
@@ -122,4 +124,9 @@ function updateScore(card, activePlayer) {
     }
   
     console.log(activePlayer["score"]);
+  }
+
+  function showScore(activePlayer)
+  {
+    if(activePlayer[])
   }

@@ -47,10 +47,10 @@ table, th, td{
 }
 
 /*adding padding to buttons for spacing*/
-.flex-blackjack-row-3 div{
+.flex-blackjack-row-3 div {
     padding: 10px;
 }
-.flex-blackjack-row-3 button{
+.flex-blackjack-row-3 button {
     padding: 10px;
     margin-bottom: 10px;
 }
