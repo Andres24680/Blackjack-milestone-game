@@ -32,7 +32,7 @@ Add a hard reset that will make you start from scratch
 - Adding a score card
 - Show "You won" or "You lose" on game end 
 - Adding a restart button to deal a new hand but not resetting the win/loss score 
-- Make sure the score collum properly represents the score
+- Make sure the score collum properly u[dates both dealer and user score
 
 ### Post-MVP Plans
 
@@ -49,5 +49,5 @@ Add a hard reset that will make you start from scratch
 | Thu. 11/17 | Start building my html and build player score card.     |
 | Sun. 11/20 | Finished the html portion. Working on CSS.    |
 | Tue. 11/22 | Started to work in my js file. Going to build card deck and load card images     |
-| Tue. 11/29 | Deploy to GitHub Pages. |
+| Tue. 11/29 | Deploy to GitHub Pages. Adding finishing touches to my js files  |
 | Thu. 12/01 | Submit completed project. Project presentations. |
