@@ -1,5 +1,8 @@
 # NYU-SD-04 Milestone Project: Blackjack Game
 
+## Game Deployment: 
+
+- Git Hub Pages: https://andres24680.github.io/Blackjack-milestone-game/
 
 ## Project Description
 
