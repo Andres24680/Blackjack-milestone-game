@@ -2,7 +2,7 @@
 
 ## Game Deployment: 
 
-- Git Hub Pages: https://andres24680.github.io/Blackjack-milestone-game/
+- Git Hub Pages: [link](https://andres24680.github.io/Blackjack-milestone-game/)
 
 ## Project Description
 
