@@ -80,7 +80,7 @@ let blackjackGame = {
       let card = randomCard(); //trigger function and store value 
       showCard(card, YOU);
       updateScore(card, YOU); //adding you parameters to update info on score and points 
-      showScore(YOU);
+      showScore(YOU); //passing back the score and bust function 
     }
   }
   
@@ -92,17 +92,18 @@ let blackjackGame = {
   }
   
   //adding function to add cards if score less then 21 
-  //adding the load images factor
+  //adding the load images factors for W+H and sources 
   function showCard(card, activePlayer) {
     if (activePlayer["score"] <= 21) {
       let cardImage = document.createElement("img");
       cardImage.src = `images/${card}.png`;
       cardImage.style = `width:${widthSize()}; height:${heightSize()};`;
       document.querySelector(activePlayer["div"]).appendChild(cardImage);
-      hitSound.play();
+      hitSound.play(); //adding sound function to recall
     }
   }
   
+  //from the interent the best working form for thr cards to load properly 
   function widthSize() {
     if (windowWidth > 1000) {
       let newWidthSize = window.screen.width * 0.1;
@@ -121,6 +122,8 @@ let blackjackGame = {
     }
   }
   
+  //defining the Ace card logic if it becomes eithewr a 1 or 11 
+  //first two line define its a 1 if closer to 21
   function updateScore(card, activePlayer) {
     if (card === "A") {
       if (activePlayer["score"] + blackjackGame["cardsMap"][card][1] <= 21) {
@@ -132,34 +135,43 @@ let blackjackGame = {
       activePlayer["score"] += blackjackGame["cardsMap"][card];
     }
   
-    console.log(activePlayer["score"]);
+    console.log(activePlayer["score"]);  //allows the score to be present in console 
   }
   
   function showScore(activePlayer) {
     //Bust logic if score is over 21
+    //adding a color on screen if player bust 
+    //.textContent adds text 
     if (activePlayer["score"] > 21) {
       document.querySelector(activePlayer["scoreSpan"]).textContent = "BUST!";
       document.querySelector(activePlayer["scoreSpan"]).style.color = "red";
     } else {
       document.querySelector(activePlayer["scoreSpan"]).textContent =
         activePlayer["score"];
+        //add a else for player not busting 
     }
   }
   
+  //function for stand button only if clicked 
   function blackjackStand() {
     if (blackjackGame.pressOnce === false) {
-      blackjackGame["isStand"] = true;
+      blackjackGame["isStand"] = true; //adding isStand logit from earlier variable 
+
+      //to simplify functions the dealer will produce the same amount of cards as user 
+      //* come back to this later on to try and improve
       let yourImages = document
         .querySelector("#your-box")
         .querySelectorAll("img");
-  
+
+      //dealer hit functios peramiter 
+      //collects how many user cards are used to match 
       for (let i = 0; i < yourImages.length; i++) {
         let card = randomCard();
-        showCard(card, DEALER);
+        showCard(card, DEALER);  //pasing dealer parameters as the "active player"
         updateScore(card, DEALER);
         showScore(DEALER);
       }
-  
+     //tells pc turn is over upong 
       blackjackGame["isTurnsOver"] = true;
   
       computeWinner();
