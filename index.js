@@ -181,6 +181,8 @@ let blackjackGame = {
     blackjackGame.pressOnce = true;
   }
   
+  //checking if player score is equal to 21 
+  //2nd lines will test if the user score is beating dealer score or if bust 
   function computeWinner() {
     if (YOU["score"] <= 21) {
       if (YOU["score"] > DEALER["score"] || DEALER["score"] > 21) {
@@ -190,17 +192,21 @@ let blackjackGame = {
       } else if (YOU["score"] === DEALER["score"]) {
         winner = "Draw";
       }
+      //else statments to check if player score is lower then dealer score 
+      //also check sif both scores are a draw 
     } else if (YOU["score"] > 21 && DEALER["score"] <= 21) {
       winner = DEALER;
     } else if (YOU["score"] > 21 && DEALER["score"] > 21) {
       winner = "None";
     }
-  
+  //if statmenst to see if both users bust and no one is winner 
     return winner;
   }
   
   function showWinner(winner) {
     let message, messageColor;
+    //add statments if player is winner and give messages with you won or loss
+    //remember to add in sounds as well to win or loss 
   
     if (winner === YOU) {
       message = "You Won";
