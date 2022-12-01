@@ -85,7 +85,7 @@ let blackjackGame = {
   }
   
   //setting the function for random card and value using .floor and .random
-  //used *13 to give back a vlaue between 1-11 
+  //used *13 to give back a vlaue between 1-12
   function randomCard() {
     let randomIndex = Math.floor(Math.random() * 13);
     return blackjackGame["cards"][randomIndex];
