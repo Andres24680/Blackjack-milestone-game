@@ -208,6 +208,8 @@ let blackjackGame = {
     //add statments if player is winner and give messages with you won or loss
     //remember to add in sounds as well to win or loss 
   
+    //adds to the win/loss collum and allows user to hear sound 
+    
     if (winner === YOU) {
       message = "You Won";
       messageColor = "#00e676";
